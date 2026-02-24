@@ -8,11 +8,9 @@
 | **SALES-003** | Top Performing Products | As a **Product Manager**, I want to identify the top 10 products by sales amount and category so that I can focus marketing efforts on high-performing items. | Create [Product Sales Rank] measure using RANKX function and establish proper relationships between fact tables and DimProduct for accurate product-level aggregations. |
 
 # Data source information 🛢️
+- **Data**: `Fabrikam_Electronic_Sales.xlsx`
 
-- **Server**: `dummyserver.database.windows.net`
-- **Database**: `AdventureWorksDW`
-
-If you cannot connect to the SQL Server above to get the schema, all table information of the DataWarehouse can be found in the file `AzureSQLSchema.csv`. 
+ all table information can be found in the file `Fabrikam_Electronic_Sales.xlsx`. 
 
 
 
