@@ -69,7 +69,8 @@ This file defines the **rules** to adapt the template report using PBIR file for
 
 - **topCard**
   
-  - add all the main semantic model measures to it to the max of 4 measures
+  - add all the main semantic model measures
+   <!-- to it to the max of 4 measures -->
 
   Example of the JSON to modify:
 
