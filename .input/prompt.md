@@ -1,7 +1,9 @@
 
 # Detailed Tasks
-
-You are working in a PBIP repository for the FABCON demo.
+- Create a new Power Bi project (PBIP) for the Atlanta FabCon Planning report, following the requirements in requirements.md. 
+- Strictly follow the development guidance in .kb/powerbi-pbip-kb.md ( Be sure to review any referenced KB documents included in this document). 
+- Dont implement the project directly! Start with a good technical development spec document with name dev-spec.md for my review. 
+- All source code and created documents should go to the src/ folder. Do not work outside of that folder. 
 
 ## Phase 2 — Atlanta FabCon Planning Report (Scenarios 5–8)
 - Use the **Atlanta_Attractions_Data.xlsx** dataset from the `.input/` folder and any existing semantic model built on top of it.
