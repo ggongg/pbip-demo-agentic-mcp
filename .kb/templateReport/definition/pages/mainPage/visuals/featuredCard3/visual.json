@@ -1,0 +1,116 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "a1b2c3d4e5f60004",
+  "position": {
+    "x": 1010,
+    "y": 8,
+    "z": 6000,
+    "height": 132,
+    "width": 262,
+    "tabOrder": 6200
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Attractions"
+                    }
+                  },
+                  "Property": "Attraction Name"
+                }
+              },
+              "queryRef": "Attractions.Attraction Name",
+              "nativeQueryRef": "Attraction Name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Attractions"
+                    }
+                  },
+                  "Property": "Rating"
+                }
+              },
+              "queryRef": "Attractions.Rating",
+              "nativeQueryRef": "Rating"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Attractions"
+                    }
+                  },
+                  "Property": "Address"
+                }
+              },
+              "queryRef": "Attractions.Address",
+              "nativeQueryRef": "Address"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Attractions"
+                    }
+                  },
+                  "Property": "Description"
+                }
+              },
+              "queryRef": "Attractions.Description",
+              "nativeQueryRef": "Description"
+            }
+          ]
+        }
+      }
+    },
+    "filters": [
+      {
+        "name": "attractionNameFilter",
+        "filter": {
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Attractions"
+                          }
+                        },
+                        "Property": "Attraction Name"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Chick-fil-A College Football Hall of Fame'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "drillFilterOtherVisuals": true
+  }
+}

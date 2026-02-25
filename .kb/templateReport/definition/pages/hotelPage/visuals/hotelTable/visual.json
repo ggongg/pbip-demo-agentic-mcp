@@ -1,0 +1,84 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "b1b2c3d4e5f60018",
+  "position": {
+    "x": 760,
+    "y": 78,
+    "z": 2000,
+    "height": 634,
+    "width": 512,
+    "tabOrder": 1500
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "Hotels" } },
+                  "Property": "Image URL"
+                }
+              },
+              "queryRef": "Hotels.Image URL",
+              "nativeQueryRef": "Image URL"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "Hotels" } },
+                  "Property": "Hotel Name"
+                }
+              },
+              "queryRef": "Hotels.Hotel Name",
+              "nativeQueryRef": "Hotel Name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "Hotels" } },
+                  "Property": "Address"
+                }
+              },
+              "queryRef": "Hotels.Address",
+              "nativeQueryRef": "Address"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "Hotels" } },
+                  "Property": "Distance To GWCC (mi)"
+                }
+              },
+              "queryRef": "Hotels.Distance To GWCC (mi)",
+              "nativeQueryRef": "Distance To GWCC (mi)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "Hotels" } },
+                  "Property": "Number of Reviews"
+                }
+              },
+              "queryRef": "Hotels.Number of Reviews",
+              "nativeQueryRef": "Number of Reviews"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "Hotels" } },
+                  "Property": "Rating"
+                }
+              },
+              "queryRef": "Hotels.Rating",
+              "nativeQueryRef": "Rating"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

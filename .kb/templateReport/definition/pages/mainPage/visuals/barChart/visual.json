@@ -2,15 +2,56 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "5868707ac858bcbe007a",
   "position": {
-    "x": 32.118081180811807,
-    "y": 216.32472324723247,
-    "z": 4000,
-    "height": 492.16236162361622,
-    "width": 366.52398523985238,
-    "tabOrder": 2000
+    "x": 10,
+    "y": 306,
+    "z": 2000,
+    "height": 234,
+    "width": 280,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "barChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Attractions"
+                    }
+                  },
+                  "Property": "Neighborhood"
+                }
+              },
+              "queryRef": "Attractions.Neighborhood",
+              "nativeQueryRef": "Neighborhood",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Attractions"
+                    }
+                  },
+                  "Property": "Attraction Count"
+                }
+              },
+              "queryRef": "Attractions.Attraction Count",
+              "nativeQueryRef": "Attraction Count"
+            }
+          ]
+        }
+      }
+    },
     "drillFilterOtherVisuals": true
   }
 }

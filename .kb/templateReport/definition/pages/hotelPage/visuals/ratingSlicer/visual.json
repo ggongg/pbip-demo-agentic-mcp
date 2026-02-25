@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "46e229f0760010499968",
+  "name": "b1b2c3d4e5f60014",
   "position": {
     "x": 10,
-    "y": 148,
-    "z": 3000,
-    "height": 150,
-    "width": 280,
-    "tabOrder": 2000
+    "y": 206,
+    "z": 4000,
+    "height": 80,
+    "width": 150,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "slicer",
@@ -18,16 +18,11 @@
             "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "'Tile'"
+                  "Value": "'Between'"
                 }
               }
             }
           }
-        }
-      ],
-      "general": [
-        {
-          "properties": {}
         }
       ]
     },
@@ -38,16 +33,12 @@
             {
               "field": {
                 "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Attractions"
-                    }
-                  },
-                  "Property": "Category"
+                  "Expression": { "SourceRef": { "Entity": "Hotels" } },
+                  "Property": "Rating"
                 }
               },
-              "queryRef": "Attractions.Category",
-              "nativeQueryRef": "Category",
+              "queryRef": "Hotels.Rating",
+              "nativeQueryRef": "Rating",
               "active": true
             }
           ]

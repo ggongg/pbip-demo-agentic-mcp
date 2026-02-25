@@ -1,34 +1,20 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "e74ca53c30d4d6ecd065",
+  "name": "a1b2c3d4e5f60000",
   "position": {
-    "x": 860,
-    "y": 526,
-    "z": 1000,
-    "height": 186,
-    "width": 412,
-    "tabOrder": 500
+    "x": 340,
+    "y": 8,
+    "z": 6000,
+    "height": 132,
+    "width": 118,
+    "tabOrder": 5000
   },
   "visual": {
-    "visualType": "tableEx",
+    "visualType": "cardVisual",
     "query": {
       "queryState": {
-        "Values": {
+        "Data": {
           "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Itineraries"
-                    }
-                  },
-                  "Property": "CreatedUTC"
-                }
-              },
-              "queryRef": "Itineraries.CreatedUTC",
-              "nativeQueryRef": "CreatedUTC"
-            },
             {
               "field": {
                 "Column": {
@@ -65,25 +51,11 @@
                       "Entity": "Itineraries"
                     }
                   },
-                  "Property": "Attraction 1"
+                  "Property": "CreatedUTC"
                 }
               },
-              "queryRef": "Itineraries.Attraction 1",
-              "nativeQueryRef": "Attraction 1"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Itineraries"
-                    }
-                  },
-                  "Property": "Attraction 2"
-                }
-              },
-              "queryRef": "Itineraries.Attraction 2",
-              "nativeQueryRef": "Attraction 2"
+              "queryRef": "Itineraries.CreatedUTC",
+              "nativeQueryRef": "CreatedUTC"
             }
           ]
         }

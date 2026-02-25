@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "b1b2c3d4e5f60012",
+  "position": {
+    "x": 340,
+    "y": 8,
+    "z": 6000,
+    "height": 60,
+    "width": 932,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "objects": {
+      "layout": [
+        {
+          "properties": {
+            "orientation": { "expr": { "Literal": { "Value": "0D" } } },
+            "columnCount": { "expr": { "Literal": { "Value": "4L" } } },
+            "customizePadding": { "expr": { "Literal": { "Value": "false" } } },
+            "cellPadding": { "expr": { "Literal": { "Value": "0L" } } },
+            "alignment": { "expr": { "Literal": { "Value": "'middle'" } } },
+            "style": { "expr": { "Literal": { "Value": "'Cards'" } } }
+          }
+        }
+      ]
+    },
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": { "SourceRef": { "Entity": "Hotels" } },
+                  "Property": "Number of Hotels"
+                }
+              },
+              "queryRef": "Hotels.Number of Hotels",
+              "nativeQueryRef": "Number of Hotels"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": { "SourceRef": { "Entity": "Hotels" } },
+                  "Property": "Average Price"
+                }
+              },
+              "queryRef": "Hotels.Average Price",
+              "nativeQueryRef": "Average Price"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": { "SourceRef": { "Entity": "Hotels" } },
+                  "Property": "Average Rating"
+                }
+              },
+              "queryRef": "Hotels.Average Rating",
+              "nativeQueryRef": "Average Rating"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": { "SourceRef": { "Entity": "Hotels" } },
+                  "Property": "Total Reviews"
+                }
+              },
+              "queryRef": "Hotels.Total Reviews",
+              "nativeQueryRef": "Total Reviews"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
