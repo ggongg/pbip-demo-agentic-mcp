@@ -65,3 +65,12 @@ Visuals to implement (refer to `.kb/templateReport/template-report-kb.md` for la
   - `.kb/templateReport/template-report-kb.md`
   - Theme files and layout PNGs in `.kb/templateReport/`
 - Before making changes, explain your plan in `dev-spec.md` so I can review it.
+
+## PBIR Schema Safety (Important)
+
+- Keep every visual JSON valid against its schema (`visualContainer/2.1.0`).
+- Do **not** add `visual.filters` in visual files.
+- If a filter is needed, use `filterConfig.filters` with a valid schema-compliant `filter.Where` payload.
+- Do **not** add custom `TopN` objects under `filterConfig.filters[*].filter` unless the exact schema supports it.
+- For top-attraction behavior, prefer model/DAX-driven logic (for example a rank measure + filterable field), not custom JSON shapes.
+- After PBIR edits, validate by reopening the PBIP in Power BI Desktop before continuing further changes.
