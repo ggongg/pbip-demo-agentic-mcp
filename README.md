@@ -90,7 +90,7 @@ A hotel portfolio analysis page for conference planners and budget owners.
 3. Install [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) and [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat).
 4. Open GitHub Copilot Chat in [Agent mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode).
 5. Open the starter file "Atanta_FabCon_Report_Theme_Starter.pbix" 
-6. Ask in the chat " Can you connect to my Power BI Desktop file " Atanta_FabCon_Report_Theme_Starter.pbix" 
+6. Ask in the chat " Can you connect to my Power BI Desktop file " Atlanta_FabCon_Report_Theme_Starter.pbix" 
 7. Copy and paste the [prompt](.input/prompt.md) into the chat.
 8. Review the generated development spec, then prompt Copilot to proceed with implementation.
 9. Open the generated .pbip file in Power BI Desktop to view the created report 
