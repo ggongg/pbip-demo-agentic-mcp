@@ -18,13 +18,15 @@ Ensure you respect the following phases when implementing the Power BI Project.
 2. Create a new semantic model, avoid creating tables and columns that are not necessary for the business requirements.
 3. **Critical:** Ensure you follow the semantic model development rules and best practices in `powerbi-modeling-kb.md`.
 
-### Phase 3: Enforce Semantic Model Best practices
-1. Ensure the application of the semantic model best practices in `powerbi-modeling-kb.md`.
-2. **Critical:** Execute the Best Practice Analysis script `.bpa/bpa.ps1` with arguments `-src [SemanticModel folder path]`. Keep executing the script until all critical errors are resolved. On each iteration, serialize the semantic model back to the `*.SemanticModel/definition/` folder.
+### Phase 3: Report implementation
 
-### Phase 4: Report implementation
-1. Copy the `.kb/templateReport` content to the report folder `*.Report/` folder of the created in the previous phase. Overwrite any existing files.
-2. Follow the instructions in the `template-report-kb.md` to adapt the report visuals to the semantic model.
+**Critical:** Read `powerbi-pbir-schemas-kb.md` before starting report work. It contains the full PBIR file structure, schema inventory, schema relationships, and common JSON patterns you will need.
+
+1. Create the PBIR report definition files inside the `*.Report/definition/` folder following the folder hierarchy documented in `powerbi-pbir-schemas-kb.md` (see "PBIR Report File Structure").
+2. Every JSON file **must** include a `$schema` property — see `powerbi-pbir-schemas-kb.md` for the exact URL per schema type.
+3. Use the JSON schema files under `.kb/schemas/` as the definitive reference for all valid properties, types, and enums.
+4. Use exact case-sensitive entity and property names from the semantic model when defining visual queries and filters.
+5. Refer to the "Common Patterns for Agents" section in `powerbi-pbir-schemas-kb.md` for column/measure references, filters, and positioning.
 
 ## PBIP file structure
 
