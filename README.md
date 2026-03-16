@@ -8,9 +8,7 @@ You can achieve agentic development in Power BI combining the following features
 - AI context files that encode your Power BI development style and schema rules. See [.kb/](.kb/) for an example.
 
 >[!IMPORTANT]
->**powerbi-modeling-mcp** is currently in private preview. If you're interested in trying it out, sign up [here](https://forms.office.com/r/0MXYd6uzwE).
-
-▶️ End-to-End demo: [here](https://www.youtube.com/watch?v=7fNDTvLbN2A)
+>**powerbi-modeling-mcp** is currently in public preview. If you're interested in trying it out, check it out [here](https://github.com/microsoft/powerbi-modeling-mcp).
 
 # ⚙️ How does it work?
 
